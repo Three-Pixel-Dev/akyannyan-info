@@ -1,6 +1,7 @@
 import { BrowserRouter, Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import { SiteFooter, SiteHeader } from './components/SiteChrome';
+import { DeleteAccountPage } from './pages/DeleteAccountPage';
 import { HomePage } from './pages/HomePage';
 import { PrivacyPage } from './pages/PrivacyPage';
 
@@ -21,6 +22,7 @@ function AppShell() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/privacy" element={<PrivacyPage />} />
+          <Route path="/delete-account" element={<DeleteAccountPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>

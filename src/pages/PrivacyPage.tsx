@@ -170,7 +170,8 @@ export function PrivacyPage() {
             <li>disconnect Google or Apple access from those providers;</li>
             <li>
               request access, correction, or deletion of your account data in the app (Profile →
-              Danger zone / အန္တရာယ်ဇုန် → delete account), or by contacting us at{' '}
+              Danger zone / အန္တရာယ်ဇုန် → delete account), via our{' '}
+              <a href="/delete-account">Delete account</a> page, or by contacting us at{' '}
               <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a>.
             </li>
           </ul>

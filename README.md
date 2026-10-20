@@ -1,6 +1,6 @@
 # Akyannyan Info (homepage + privacy)
 
-Public light-theme site for Google OAuth Branding URLs and users who need a Privacy Policy.
+Public light-theme site for Google OAuth Branding URLs, Privacy Policy, and account deletion.
 
 ## Routes
 
@@ -8,6 +8,7 @@ Public light-theme site for Google OAuth Branding URLs and users who need a Priv
 |------|---------|
 | `/` | Homepage |
 | `/privacy` | Privacy Policy (English + Burmese intro) |
+| `/delete-account` | Account deletion instructions (Google Play Data safety URL) |
 
 ## Develop
 
@@ -29,7 +30,8 @@ pnpm preview
 2. In Google Auth Platform → **Branding**:
    - **Homepage URL:** `https://YOUR_DOMAIN/`
    - **Privacy policy URL:** `https://YOUR_DOMAIN/privacy`
-3. Authorized domains: add `YOUR_DOMAIN` (no `https://`).
+3. Google Play → Data safety → **Delete account URL:** `https://YOUR_DOMAIN/delete-account`
+4. Authorized domains: add `YOUR_DOMAIN` (no `https://`).
 
 `vercel.json` and `public/_redirects` already rewrite SPA routes.
 

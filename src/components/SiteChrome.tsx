@@ -35,6 +35,9 @@ export function SiteHeader() {
           <li>
             <NavLink to="/privacy">Privacy</NavLink>
           </li>
+          <li className="nav-hide-sm">
+            <NavLink to="/delete-account">Delete account</NavLink>
+          </li>
           <li>
             <a className="nav-cta" href={MESSENGER} target="_blank" rel="noreferrer">
               Messenger
@@ -59,6 +62,7 @@ export function SiteFooter() {
         <nav aria-label="Footer">
           <Link to="/">Home</Link>
           <Link to="/privacy">Privacy Policy</Link>
+          <Link to="/delete-account">Delete account</Link>
           <a href={MESSENGER} target="_blank" rel="noreferrer">
             Messenger
           </a>
