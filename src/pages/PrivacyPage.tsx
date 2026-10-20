@@ -1,6 +1,6 @@
 const SUPPORT_EMAIL = 'akyannyan8@gmail.com';
 const MESSENGER = 'https://m.me/akyannyan.astrology';
-const LAST_UPDATED = '24 September 2026';
+const LAST_UPDATED = '20 October 2026';
 
 export function PrivacyPage() {
   return (
@@ -28,7 +28,7 @@ export function PrivacyPage() {
               <a href="#use">How we use information</a>
             </li>
             <li>
-              <a href="#auth">Sign-in with Google &amp; Facebook</a>
+              <a href="#auth">Sign-in with Google &amp; Apple</a>
             </li>
             <li>
               <a href="#share">Sharing</a>
@@ -65,8 +65,8 @@ export function PrivacyPage() {
           <ul>
             <li>
               <strong>Account &amp; identity</strong> — name, email address, profile photo URL,
-              and provider IDs when you sign in with Google or Facebook; or membership / login
-              codes issued for your account.
+              and provider IDs when you sign in with Google or Apple; phone or email used for
+              OTP login where offered; or membership / login codes issued for your account.
             </li>
             <li>
               <strong>Birth profile</strong> — birth date, time, place, and coordinates you
@@ -110,7 +110,7 @@ export function PrivacyPage() {
             legal, or financial advice.
           </p>
 
-          <h2 id="auth">4. Sign-in with Google &amp; Facebook</h2>
+          <h2 id="auth">4. Sign-in with Google &amp; Apple</h2>
           <p>
             If you choose <strong>Sign in with Google</strong>, Google authenticates you and
             may share with us a verified email, name, profile image, and a unique Google user
@@ -118,14 +118,14 @@ export function PrivacyPage() {
             Akyannyan account.
           </p>
           <p>
-            If you choose <strong>Facebook</strong> sign-in, we receive an access token and
-            basic public profile fields needed to identify your account, subject to Facebook’s
-            permissions and policies.
+            If you choose <strong>Sign in with Apple</strong>, Apple authenticates you and may
+            share with us a unique Apple user ID and, if you allow it, your name and email (or
+            Apple’s private relay email). We verify the Apple identity token on our servers and
+            create or link your Akyannyan account.
           </p>
           <p>
-            Your use of Google or Facebook is also governed by their respective privacy
-            policies. You can revoke app access anytime in your Google or Facebook account
-            settings.
+            Your use of Google or Apple is also governed by their respective privacy policies.
+            You can revoke app access anytime in your Google or Apple account settings.
           </p>
 
           <h2 id="share">5. Sharing</h2>
@@ -136,7 +136,7 @@ export function PrivacyPage() {
               storage under contracts that limit use to providing the service;
             </li>
             <li>
-              <strong>Authentication providers</strong> (Google, Facebook) as part of sign-in
+              <strong>Authentication providers</strong> (Google, Apple) as part of sign-in
               flows you initiate;
             </li>
             <li>
@@ -151,10 +151,10 @@ export function PrivacyPage() {
 
           <h2 id="retain">6. Retention &amp; security</h2>
           <p>
-            We keep account and profile data while your account is active and for a reasonable
-            period afterward if needed for support, disputes, or legal compliance. Soft-deleted
-            records may remain inaccessible in everyday use while retained for integrity of the
-            ledger or recovery.
+            We keep account and profile data while your account is active. When you delete your
+            account in the app, we permanently remove your user record and owned data (readings,
+            conversations, devices, points balance). Soft-deleted operational rows elsewhere may
+            remain inaccessible while retained briefly for integrity or recovery where applicable.
           </p>
           <p>
             We apply industry-standard safeguards (encrypted transport, access controls, and
@@ -167,9 +167,10 @@ export function PrivacyPage() {
           <ul>
             <li>update birth profile and preferences in the app;</li>
             <li>disable push notifications in the app or OS settings;</li>
-            <li>disconnect Google / Facebook access from those providers;</li>
+            <li>disconnect Google or Apple access from those providers;</li>
             <li>
-              request access, correction, or deletion of your account data by contacting us at{' '}
+              request access, correction, or deletion of your account data in the app (Profile →
+              Danger zone / အန္တရာယ်ဇုန် → delete account), or by contacting us at{' '}
               <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a>.
             </li>
           </ul>
